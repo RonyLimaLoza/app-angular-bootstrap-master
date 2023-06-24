@@ -1,0 +1,19 @@
+<div class="card">
+    <div class="card-header">
+      Formulario de IMC
+    </div>
+    <div class="card-body">
+        <div class="mb-3">
+            <label for="txtnumero1" class="form-label">Ingrese talla:</label>
+            <input type="text" [(ngModel)]="frmImc.talla" class="form-control" id="txtnumero1">
+          </div>
+          <div class="mb-3">
+            <label for="txtnumero2" class="form-label">Ingrese peso:</label>
+            <input type="text" [(ngModel)]="frmImc.peso" class="form-control" id="txtnumero2">
+          </div>
+          <button type="button" (click)="calcularIMC()" class="btn btn-primary">Calcular</button>
+          <div class="alert alert-primary" role="alert"> 
+            {{resultado}}           
+          </div>
+    </div>
+  </div>
